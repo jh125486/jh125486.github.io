@@ -19,11 +19,11 @@ define([], function () {
                         + '<br/>' + frame.model().controls.html();
             layout.invalidate();
         })
-        // .after(500, function () {
-        //     frame.model().subtitle = '<p style="visibility:visible"><em><a href="https://github.com/benbjohnson/thesecretlivesofdata/issues/1" target="_blank">Please note: this is a working draft. Click here to provide feedback.</a></em></h1>';
-        //     layout.invalidate();
-        //     frame.model().controls.show();
-        // })
+        .after(500, function () {
+            // frame.model().subtitle = '<p style="visibility:visible"><em><a href="https://github.com/benbjohnson/thesecretlivesofdata/issues/1" target="_blank">Please note: this is a working draft. Click here to provide feedback.</a></em></h1>';
+            layout.invalidate();
+            frame.model().controls.show();
+        })
 
 
         .after(100, function () {
